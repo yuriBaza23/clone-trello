@@ -1,0 +1,371 @@
+.container {
+    height: calc(100vh);
+    overflow: hidden;
+}
+
+.layout-home {
+    display: flex;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 1110px;
+
+    box-sizing: border-box;
+    height: 100%;
+    overflow: scroll;
+}
+
+.layout-home .left-menu,
+.layout-home .right-menu {
+    display: flex;
+    flex-direction: column;
+
+    width: 220px;
+    position: sticky;
+
+    padding-top: 30px;
+
+    top: 0;
+    left: 0;
+}
+
+.layout-home .left-menu button {
+    display: flex;
+
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    font-weight: 700;
+
+    background: transparent;
+    border-radius: 4px;
+    border: none;
+    transition: background .2s;
+}
+
+.layout-home .left-menu button:hover {
+    background: rgba(9,30,66,.08);
+}
+
+.layout-home .left-menu button svg {
+    margin-right: 10px;
+}
+
+.layout-home .left-menu button.active {
+    background: #e4f0f6;
+    color: #0079bf;
+}
+
+.layout-home .left-menu .workspace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #5e6c84;
+}
+
+.layout-home .left-menu .workspace h1 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.layout-home .left-menu .workspace button {
+    display: flex;
+
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    padding: 2px;
+    margin: 0;
+}
+
+.layout-home .left-menu .workspace button svg {
+    margin: 0;
+}
+
+.layout-home .left-menu .workspace button:hover {
+    background-color: rgba(9,30,66,.08);
+}
+
+.layout-home .left-menu .company-workspace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.layout-home .left-menu .company-workspace .name {
+    display: flex;
+    align-items: center;
+}
+
+.layout-home .left-menu .company-workspace .name img {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.layout-home .left-menu .company-workspace .name h1 {
+    font-size: 12px;
+}
+
+.layout-home .left-menu .company-workspace button {
+    display: flex;
+
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    padding: 2px;
+    margin: 0;
+}
+
+.layout-home .left-menu .company-workspace button svg {
+    margin: 0;
+}
+
+.layout-home .right-menu .favs-workspace {
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #5e6c84;
+}
+
+.layout-home .right-menu .favs-workspace h1 {
+    font-size: 12px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.layout-home .right-menu .div-workspace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background .2s;
+}
+
+.star-button {
+    display: none;
+}
+
+.layout-home .right-menu .div-workspace.star button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+    color: #e6c60d;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.layout-home .right-menu .div-workspace h1 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.layout-home .right-menu .div-workspace h2 {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 400;
+    color: #5e6c84;
+}
+
+.layout-home .right-menu .div-workspace:hover {
+    background: rgba(9,30,66,.08);
+}
+
+.layout-home .right-menu .div-workspace:hover .star-button {
+    display: flex;
+    background: transparent;
+    border: none;
+    color: #5e6c84;
+    cursor: pointer;
+}
+
+.layout-home .right-menu .div-workspace .name-one {
+    display: flex;
+}
+
+.layout-home .right-menu .div-workspace .color-square {
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.color-square.blue {
+    background: rgb(0, 174, 204);
+}
+
+.color-square.red {
+    background: rgb(176, 70, 50);
+}
+
+.color-square.green {
+    background: rgb(75, 191, 107);
+}
+
+.layout-home .right-menu .favs-workspace.two {
+    margin-top: 30px;
+}
+
+.layout-home .right-menu .create {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #5e6c84;
+    transition: background .2s;
+}
+
+.layout-home .right-menu .create button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 12px;
+    background: rgba(9,30,66,.04);
+}
+
+.layout-home .right-menu .create:hover {
+    background: rgba(9,30,66,.08);
+}
+
+.layout-home .content-home {
+    display: flex;
+    flex-direction: column;
+    width: min(470px, 100%);
+    padding: 0 80px 0 80px;
+    height: max-content;
+} 
+
+.layout-home .content-home button.show-more {
+    margin-bottom: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #5e6c84;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.layout-home .content-home .destaque-name {
+    display: flex;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #5e6c84;
+}
+
+.layout-home .content-home .destaque-name h1 {
+    font-size: 12px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.layout-home .content-home .card-prpg {
+    display: flex;
+
+    width: 100%;
+    height: fit-content;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    border-radius: 4px;
+    background: #FFF;
+
+    box-shadow: 0 1px 1px rgb(9 30 66 / 25%), 0 0 0 1px rgb(9 30 66 / 8%)
+}
+
+.layout-home .content-home .card-prpg img {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #FEF2F9;
+}
+
+.layout-home .content-home .card-prpg .content {
+    padding: 20px;
+}
+
+.layout-home .content-home .card-prpg h1 {
+    margin: 0;
+    font-size: 17px;
+} 
+
+.layout-home .content-home .card-prpg h2 {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+} 
+
+.layout-home .content-home .card-prpg button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #5e6c84;
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+@media(max-width: 1100px) {
+    .layout-home .right-menu {
+        display: none;
+    }
+
+    .layout-home {
+        width: 700px;
+    }
+
+    .layout-home .content-home {
+        padding: 0 30px 0 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .layout-home .left-menu {
+        display: none;
+    }
+
+    .layout-home {
+        width: 500px;
+    }
+
+    .layout-home .content-home {
+        padding: 0 30px 0 30px;
+    }
+}
