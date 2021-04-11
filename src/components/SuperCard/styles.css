@@ -1,0 +1,202 @@
+.super-card-component {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 15px;
+
+    background: #FFF;
+    box-shadow: 0 1px 3px 0 rgb(9 30 66 / 13%);
+    border-radius: 4px;
+}
+
+.super-card-component .preview-card {
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 174, 204);
+    padding: 10px 10px 0 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.super-card-component .preview-card .card {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 4px;
+    background: #FFF;
+    padding: 10px;
+}
+
+.super-card-component .preview-card .card .tags {
+    display: flex;
+}
+
+.super-card-component .preview-card .card .tags .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    padding: 2px;
+    margin-right: 10px;
+
+    font-weight: 700;
+    font-size: 12px;
+
+    border-radius: 4px;
+    color: #FFF;
+}
+
+.super-card-component .preview-card .card h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.super-card-component .preview-card .card .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.super-card-component .preview-card .card .card-footer .part-one {
+    display: flex;
+    align-items: center;
+    color: #5e6c84;
+    font-size: 15px;
+}
+
+.super-card-component .preview-card .card .card-footer .part-one svg {
+    margin-right: 15px;
+}
+
+.super-card-component .preview-card .card .card-footer .part-one .icon-with-number {
+    display: flex;
+    align-items: center;
+}
+
+.super-card-component .preview-card .card .card-footer .part-one .icon-with-number svg {
+    margin-right: 5px;
+}
+
+.tag.green {
+    background: rgb(75, 191, 107);
+}
+
+.super-card-component .preview-card span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFF;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.super-card-component .preview-card span span {
+    font-weight: 400;
+}
+
+.super-card-component .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+.super-card-component .user div {
+    display: flex;
+    align-items: center;
+}
+
+.super-card-component .user div .name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.super-card-component .user div .name h1,
+.super-card-component .user div .name h2 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.super-card-component .user div .name h2 {
+   font-weight: 400;
+   color: #5e6c84;
+}
+
+.super-card-component .user div img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.super-card-component .user button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.super-card-component .content,
+.super-card-component .reactions,
+.super-card-component .awnser-button {
+    padding: 10px;
+}
+
+.super-card-component .content p {
+    font-size: 14px;
+}
+
+.super-card-component .reactions button {
+    display: flex;
+    
+    border: 1px solid #ebecf0;
+    border-radius: 12px;
+    padding: 3px 7px;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    
+    background: transparent;
+    color: #6b778c;
+}
+
+.super-card-component .reactions button:hover {
+    color: #000;
+}
+
+.super-card-component .awnser-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    border: 1px solid #dfe1e6;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    transition: background .2s;
+    
+    background: transparent;
+    color: #172b4d;
+}
+
+.super-card-component .awnser-button button svg {
+    margin-right: 15px;
+}
+
+.super-card-component .awnser-button button:hover {
+    background: rgba(9,30,66,.13);
+}
