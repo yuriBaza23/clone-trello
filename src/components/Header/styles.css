@@ -1,0 +1,162 @@
+.header-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 40px;
+    background-color: #026aa7;
+    padding: 0 5px;
+
+    box-sizing: border-box;
+    position: sticky;
+}
+
+.header-component .left-header-buttons,
+.header-component .right-header-buttons {
+    display: flex;
+    height: 30px;
+    width: 370px;
+}
+
+.header-component .right-header-buttons {
+    justify-content: flex-end;
+}
+
+.header-component button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: hsla(0,0%,100%,.3);
+    color: #FFF;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 3px;
+
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.header-component button:hover {
+    background: hsla(0,0%,100%,.2);
+}
+
+.header-component button.square-button {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.header-component button.rectangle-button {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.header-component button.rectangle-button svg {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.header-component .input-search {
+    display: flex;
+    align-items: center;
+    background: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+}
+
+.header-component .input-search input {
+    background: transparent;
+    border: none;
+    margin-left: 5px;
+    outline: none;
+    color: #FFF;
+}
+
+.header-component .input-search input::placeholder {
+    color: #FFF;
+}
+
+.header-component .input-search button {
+    background: transparent;
+    font-size: 15px;
+}
+
+.header-component .central-header {
+    display: flex;
+    align-items: center;
+    
+    height: 100%;
+    
+    color: #FFF;
+    opacity: .5;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+
+.header-component .central-header:hover {
+    opacity: 1;
+}
+
+.header-component .central-header h1 {
+    font-size: 20px;
+}
+
+.header-component .central-header svg {
+    display: flex;
+    font-size: 20px;
+    color: #FFF;
+    margin-right: 10px;
+}
+
+.header-component .user-trello {
+    width: 30px;
+    height: 30px;
+}
+
+.header-component .user-trello img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media(max-width: 750px) {
+    .header-component .left-header-buttons button.square-button.home {
+        display: none;
+    }
+
+    .header-component .left-header-buttons button.rectangle-button span {
+        display: none;
+    }
+
+    .header-component .left-header-buttons button.rectangle-button svg {
+        margin-right: 0;
+    }
+
+    .header-component .left-header-buttons .input-search {
+        background: transparent;
+    }
+    
+    .header-component .left-header-buttons .input-search input {
+        display: none;
+    }
+
+    .header-component .left-header-buttons .input-search button {
+        background: hsla(0,0%,100%,.3);
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-component .left-header-buttons .input-search button:hover {
+        background: hsla(0,0%,100%,.2);
+    }
+
+    .header-component .right-header-buttons button.square-button.info {
+        display: none;
+    }
+}
