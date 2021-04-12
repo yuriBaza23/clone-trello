@@ -1,0 +1,73 @@
+.mini-card-component {
+    width: 180px;
+    height: 80px;
+
+    background: #F2F2F2;
+    border-radius: 4px;
+    padding: 10px;
+
+    cursor: pointer;
+    justify-content: space-between;
+
+    margin-right: 20px;
+}
+
+.mini-card-component h1 {
+    display: flex;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+
+    margin: 0;
+}
+
+.mini-card-component .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-top: 45px;
+    position: relative;
+}
+
+.mini-card-component .footer h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mini-card-component .footer svg {
+    color: #e6c60d;
+    position: absolute;
+
+    right: 0;
+
+    transition: all .1s;
+}
+
+.mini-card-component .footer svg:hover {
+    font-size: 18px;
+}
+
+.mini-card-component.blue {
+    background: rgb(0, 174, 204);
+}
+
+.mini-card-component.green {
+    background: rgb(75, 191, 107);
+}
+
+.mini-card-component.red {
+    background: rgb(176, 70, 50);
+}
+
+.mini-card-component.un-fav svg {
+    display: none;
+    color: #FFF;
+}
+
+.mini-card-component.un-fav:hover svg {
+    display: flex;
+}
