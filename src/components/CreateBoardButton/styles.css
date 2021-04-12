@@ -1,0 +1,21 @@
+.create-board-button-component {
+    width: 200px;
+    height: 100px;
+
+    background: rgba(9,30,66,.04);
+    border-radius: 4px;
+    padding: 10px;
+
+    font-size: 15px;
+    color: #172b4d;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all .2s;
+}
+
+.create-board-button-component:hover {
+    background: rgba(9,30,66,.08);
+}
