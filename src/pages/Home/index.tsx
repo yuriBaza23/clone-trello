@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { FiChevronDown, FiClock, FiHeart, FiHome, FiPlus, FiStar, FiTrello } from 'react-icons/fi';
+import { useHistory } from 'react-router';
 import Header from '../../components/Header';
 import SuperCard from '../../components/SuperCard';
 import './styles.css';
 
 const Home: React.FC = () => {
+    const history = useHistory();
+
+    const goToBoards = useCallback(() => {
+        history.push('/minato/boards')
+    }, [history])
+
     return (
         <div className='container'>
             <Header/>
             <div className="layout-home">
                 <div className="left-menu">
-                    <button>
+                    <button onClick={goToBoards}>
                         <FiTrello/>
                         Quadros
                     </button>
