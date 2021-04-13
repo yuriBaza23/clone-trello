@@ -1,0 +1,104 @@
+.header-board-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgb(0, 121, 191);
+    padding: 10px;
+}
+
+.header-board-component .one,
+.header-board-component .two {
+    display: flex;
+}
+
+.header-board-component .with-icon,
+.header-board-component .only-text,
+.header-board-component .only-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    
+    background: hsla(0,0%,100%,.3);
+    color: #FFF;
+
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+
+    outline: none;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.header-board-component .with-icon:hover,
+.header-board-component .only-text:hover,
+.header-board-component .only-icon:hover {
+    background: hsla(0,0%,100%,.2);
+}
+
+.header-board-component .with-icon svg {
+    margin-right: 5px;
+}
+
+.header-board-component .with-icon .second-icon {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.header-board-component .only-icon {
+    width: 30px;
+}
+
+.header-board-component .one input {
+    width: min-content;
+
+    background: hsla(0,0%,100%,.3);
+    color: #FFF;
+    font-size: 15px;
+
+    padding: 0 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 5px;
+}
+
+.header-board-component .vetical-divider {
+    width: 1px;
+    height: 25px;
+
+    background: hsla(0,0%,100%,.3);
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.header-board-component .team {
+    display: flex;
+    margin-right: 5px;
+}
+
+.header-board-component .team img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.header-board-component .with-icon div {
+    background: rgba(255, 255, 255, .3);
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.header-board-component .with-icon img {
+    height: 20px;
+
+    margin-right: 10px;
+}
