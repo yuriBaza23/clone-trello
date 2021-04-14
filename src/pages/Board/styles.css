@@ -1,0 +1,7 @@
+.container .board-content {
+    width: 100%;
+    height: calc(100vh - 60px);
+
+    background: rgb(0, 121, 191);
+    padding: 0 10px 10px 10px;
+}
