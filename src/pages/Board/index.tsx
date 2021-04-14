@@ -1,4 +1,5 @@
 import React from 'react';
+import CreateListButton from '../../components/CreateListButton';
 import Header from '../../components/Header';
 import HeaderBoard from '../../components/HeaderBoard';
 
@@ -9,6 +10,9 @@ const Board: React.FC = () => {
     <div className="container">
       <Header/>
       <HeaderBoard/>
+      <div className="board-content">
+        <CreateListButton/>
+      </div>
     </div>
   );
 }
